@@ -70,3 +70,5 @@ while True:
     elif opsi == 4:
         print("\nTerimakasih telah menggunakan aplikasi ATM_SIMULATOR_MAYER... 🙏😊\n")
         exit()
+
+# © MayerAS 29 November 2023
