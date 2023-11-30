@@ -18,7 +18,7 @@ def isi(saldo):
     while True:
         ngisi = periksa("\nIsi Berapa 💳: Rp")
         if ngisi == 0:
-            print("Tidak dapat mengisi saldo dengan nominal Rp0! 😒")
+            print("Tidak dapat mengisi saldo dengan nominal seperti itu! 😒")
             return ngisi
         print("Berhasil diisi! 🥳🥳\n")
         saldo += ngisi
@@ -36,6 +36,9 @@ def tarik(saldo):
         narik = periksa("Tarik Berapa 💵: Rp")
         if saldo < narik:
             print(f"Saldo Tidak cukup untuk ditarik sebesar: Rp{narik}! 😥")
+            return saldo
+        elif narik < 0 or narik == 0:
+            print("Tidak dapat menarik dengan nominal seperti itu! 😒")
             return saldo
         print(f"Berhasil Ditarik! 😁👍\n")
         saldo -= narik
@@ -71,4 +74,5 @@ while True:
         print("\nTerimakasih telah menggunakan aplikasi ATM_SIMULATOR_MAYER... 🙏😊\n")
         exit()
 
-# © MayerAS 29 November 2023
+# © MayerAS 29 November 2023 📌
+# Update 30 November 2023
